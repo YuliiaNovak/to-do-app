@@ -1,5 +1,7 @@
-const ToDoItem: React.FC<{ text: string }> = (props) => {
-  return <li>{props.text}</li>
-}
+import classes from "./TodoItem.module.css";
 
-export default ToDoItem
+const ToDoItem: React.FC<{ text: string }> = (props) => {
+   return <li className={classes.item}>{props.text}</li>;
+};
+
+export default ToDoItem;
